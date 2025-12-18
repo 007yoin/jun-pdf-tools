@@ -1,10 +1,10 @@
 /*
- * pdf_splitter.h
+ * pdf_tools.h
  * PDF split/merge using QPDF
  */
 
-#ifndef PDF_SPLITTER_H
-#define PDF_SPLITTER_H
+#ifndef PDF_TOOLS_H
+#define PDF_TOOLS_H
 
 #include <windows.h>
 
@@ -75,4 +75,4 @@ int pdf_split(const WCHAR* input_path, const WCHAR* output_path, int start_page,
 int pdf_merge(const WCHAR** input_paths, int input_count, const WCHAR* output_path,
               pdf_progress_cb progress_cb, void* user_data, pdf_error_t* error, int* failed_index);
 
-#endif /* PDF_SPLITTER_H */
+#endif /* PDF_TOOLS_H */

@@ -1,13 +1,13 @@
-# Jun PDF Splitter - 개발자 가이드
+# Jun PDF Tools - 개발자 가이드
 
 ## 프로젝트 구조
 
 ```
-jun-pdf-splitter/
+jun-pdf-tools/
 ├── src/
 │   ├── main.c           # Win32 GUI (탭, 버튼, 리스트박스 등)
-│   ├── pdf_splitter.c   # PDF 처리 로직 (QPDF 라이브러리 사용)
-│   └── pdf_splitter.h   # PDF 함수 헤더
+│   ├── pdf_tools.c      # PDF 처리 로직 (QPDF 라이브러리 사용)
+│   └── pdf_tools.h      # PDF 함수 헤더
 ├── CMakeLists.txt       # CMake 빌드 설정
 ├── README.md            # 사용자용 문서
 └── README_개발자용.md   # 개발자용 문서 (이 파일)
@@ -54,8 +54,8 @@ vcpkg install qpdf:x64-windows-static
 ### 1. 저장소 클론
 
 ```cmd
-git clone https://github.com/007yoin/jun-pdf-splitter.git
-cd jun-pdf-splitter
+git clone https://github.com/007yoin/jun-pdf-tools.git
+cd jun-pdf-tools
 ```
 
 ### 2. CMake 설정
@@ -84,7 +84,7 @@ cmake --build build --config Release
 ### 4. 출력 파일
 
 ```
-build\Release\jun-pdf-splitter.exe
+build\Release\jun-pdf-tools.exe
 ```
 
 단일 exe 파일 (약 1.7MB), DLL 불필요.
@@ -108,7 +108,7 @@ Win32 GUI 전체 구현:
   - `merge_execute()` - 병합 실행
 - **드래그 앤 드롭**: `WM_DROPFILES` 처리
 
-### pdf_splitter.c
+### pdf_tools.c
 
 QPDF 라이브러리를 사용한 PDF 처리:
 
@@ -119,7 +119,7 @@ QPDF 라이브러리를 사용한 PDF 처리:
 
 **한글 경로 처리**: QPDF는 한글 경로를 직접 처리하지 못하므로, 임시 파일(ASCII 경로)로 복사 후 처리.
 
-### pdf_splitter.h
+### pdf_tools.h
 
 ```c
 int pdf_get_page_count(const WCHAR* pdf_path);

@@ -22,7 +22,7 @@ PDF 파일을 간편하게 분할하고 병합할 수 있는 Windows 프로그�
 
 ## 다운로드
 
-[Releases](https://github.com/007yoin/jun-pdf-splitter/releases) 페이지에서 최신 버전을 다운로드하세요.
+[Releases](https://github.com/007yoin/jun-pdf-tools/releases) 페이지에서 최신 버전을 다운로드하세요.
 
 ## 사용법
 

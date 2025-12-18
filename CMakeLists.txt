@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(jun-pdf-splitter C)
+project(jun-pdf-tools C)
 
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
@@ -18,11 +18,11 @@ find_package(qpdf CONFIG REQUIRED)
 # Source files
 set(SOURCES
     src/main.c
-    src/pdf_splitter.c
+    src/pdf_tools.c
 )
 
 set(HEADERS
-    src/pdf_splitter.h
+    src/pdf_tools.h
 )
 
 # Executable

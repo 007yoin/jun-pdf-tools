@@ -1,8 +1,8 @@
 /*
- * pdf_splitter.c - PDF processing using QPDF (Memory-optimized sequential merge)
+ * pdf_tools.c - PDF processing using QPDF (Memory-optimized sequential merge)
  */
 
-#include "pdf_splitter.h"
+#include "pdf_tools.h"
 #include <qpdf/qpdf-c.h>
 #include <stdlib.h>
 #include <stdio.h>

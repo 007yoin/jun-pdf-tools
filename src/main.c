@@ -9,7 +9,7 @@
 #include <shellapi.h>
 #include <stdio.h>
 
-#include "pdf_splitter.h"
+#include "pdf_tools.h"
 
 #pragma comment(lib, "comctl32.lib")
 
